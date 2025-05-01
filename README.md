@@ -1,4 +1,4 @@
-# 🎯 Sentiment Analysis with Naive Bayes
+# 🎯 Sentiment Analysis of IMDb Reviews with Naive Bayes
 
 ## 📌 Project Overview
 This project implements a sentiment analysis pipeline using the **Naive Bayes** classifier. The dataset consists of text reviews (positive and negative sentiments) which are preprocessed and vectorized before training a model. The goal of the project is to classify whether a given review expresses a positive or negative sentiment.
@@ -34,7 +34,13 @@ This project was built to:
 ### 🚀 5. Model Evaluation
 - **Classification Report**: Evaluates precision, recall, f1-score for each class.
 - **Confusion Matrix**: Displays the true vs predicted classifications.
+- 
+### 🚀 6. Hyperparameter Tuning
+Hyperparameter tuning is a critical part of improving model performance. In this project, we used **GridSearchCV** to search for the best hyperparameters for the **Multinomial Naive Bayes** model. The primary hyperparameter we tuned was `alpha`, which is used for Laplace smoothing. 
 
+#### Hyperparameter Tuning with GridSearchCV:
+- **Alpha**: This hyperparameter controls the smoothing applied during the estimation of probabilities. We experimented with different values of `alpha` to determine the one that minimizes the error on the validation set.
+  
 ### 🏆 6. Results
 The model is evaluated using a **classification report** and a **confusion matrix** to assess its accuracy and performance. The model achieves good accuracy with minimal overfitting.
 
@@ -56,7 +62,6 @@ The model is evaluated using a **classification report** and a **confusion matri
 Here are a few ways this project can be extended and improved:
 - **Experiment with Other Models**: Try other machine learning models like **Logistic Regression**, **SVM**, or **Random Forest** for comparison.
 - **Deep Learning**: Experiment with deep learning models such as **LSTM** or **BERT** for sentiment analysis on larger datasets.
-- **Hyperparameter Tuning**: Further tune hyperparameters for better performance using techniques like **RandomizedSearchCV**.
 - **Data Augmentation**: Use techniques like back-translation or synonym replacement to augment the text data.
 
 ## 📦 Requirements
