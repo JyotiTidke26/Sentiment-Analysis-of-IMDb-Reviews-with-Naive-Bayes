@@ -48,12 +48,12 @@ The model is evaluated using a **classification report** and a **confusion matri
 | Metric              | Value   |
 |---------------------|---------|
 | Accuracy            | 85%     |
-| Precision (Positive)| 0.87    |
-| Recall (Positive)   | 0.84    |
+| Precision (Positive)| 0.85    |
+| Recall (Positive)   | 0.86    |
 | F1-Score (Positive) | 0.85    |
-| Precision (Negative)| 0.83    |
-| Recall (Negative)   | 0.86    |
-| F1-Score (Negative) | 0.84    |
+| Precision (Negative)| 0.86    |
+| Recall (Negative)   | 0.84    |
+| F1-Score (Negative) | 0.85    |
 
 ## 📁 Files Included
 - **Sentiment_Analysis.ipynb**: The Jupyter notebook that includes the complete workflow, including data loading, preprocessing, model training, and evaluation.
